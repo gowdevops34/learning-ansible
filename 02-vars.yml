@@ -45,3 +45,14 @@
     - name: Print FQDN
       ansible.builtin.debug:
         msg: "{{ ansible_fqdn }}"
+        #if any value starts with a variable then we need to quote either with double or single
+
+- name: Register Variables
+  hosts: localhost
+  tasks:
+    - name: Run Uptime command
+      ansible.builtin.shell: uptime
+      register: output
+    - name: Print output of shell command
+      ansible.builtin.debug:
+        msg: "{{ output.stdout }}
