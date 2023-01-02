@@ -7,3 +7,4 @@
       ansible.builtin.debug:
         msg: URL = {{ URL }}
 
+# declaring variables in play level we can access in task level
