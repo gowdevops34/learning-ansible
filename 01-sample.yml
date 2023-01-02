@@ -1,0 +1,9 @@
+- name: Intro to playbook
+  hosts: loacalhost
+  tasks:
+    - name: Print Hello
+      ansible.builtin.debug:
+        msg: Hello
+    - name: Print Fruit
+      debug:
+        msg: Apple
