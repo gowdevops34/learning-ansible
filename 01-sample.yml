@@ -1,5 +1,5 @@
 - name: Intro to playbook
-  hosts: loacalhost
+  hosts: localhost
   tasks:
     - name: Print Hello
       ansible.builtin.debug:
