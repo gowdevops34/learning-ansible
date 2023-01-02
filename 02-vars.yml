@@ -19,3 +19,12 @@
         msg: URL = {{ URL }}
 
 # Accessing variables from another file demo-vars.yml
+
+- name: Vars from tasks
+  hosts: localhost
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
+      vars:
+        URL: tasks.example.com
