@@ -56,7 +56,7 @@
 
     - name: Store variable in a standard name
       ansible.builtin.set_fact:
-        msg: "{{ output.stdout }}"
+        UPTIME: "{{ output.stdout }}"
 
     - name: Print output of shell command
       ansible.builtin.debug:
