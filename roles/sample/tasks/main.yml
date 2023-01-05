@@ -11,7 +11,7 @@
     src: sample.txt
     dest: /tmp/sample-files.txt
 
-- name: Copy file
+- name: Template a file
   ansible.builtin.template:
     src: sample.txt
     dest: /tmp/sample-template.txt
