@@ -1,0 +1,9 @@
+- name: Demo on Loops
+  hosts: localhosts
+  tasks:
+    - name: Loop Example
+      debug:
+        msg: Fruit = {{item}}
+      loop:
+        - apple
+        - banana
